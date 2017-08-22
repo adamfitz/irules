@@ -1,0 +1,6 @@
+when HTTP_REQUEST
+{
+    if
+    { [HTTP::uri] equals "/index.html" }
+    { HTTP::redirect "/webserver2.html" }
+}
